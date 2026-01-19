@@ -28,5 +28,17 @@ public class App {
          * Output: [0]
          * 
          */
+        // Constructing a binary tree with 7 nodes
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(4);
+        root.right = new TreeNode(5);
+        root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(7);
+
+        Solution solution = new Solution();
+        solution.flatten(root);
+
     }
 }
